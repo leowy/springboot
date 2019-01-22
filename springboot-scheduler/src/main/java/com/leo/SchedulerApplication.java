@@ -3,15 +3,11 @@ package com.leo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/**
- * @author Leowy Zhuang
- *
- */
 @SpringBootApplication
-public class AdminClientApplication {
+public class SchedulerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AdminClientApplication.class, args);
+		SpringApplication.run(SchedulerApplication.class, args);
 	}
 
 }

@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**  
  *
- *  @author	Zhang Wei
+ *  @author	Leowy Zhuang
  */
 @RestController
 public class IndexController {
