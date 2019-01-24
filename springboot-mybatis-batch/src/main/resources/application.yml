@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    driver-class-name: net.sourceforge.jtds.jdbc.Driver
+    url:  jdbc:jtds:sybase://127.0.0.1:4100/test;charset=cp936;language=chinese
+    username: root
+    password: 123456
+    hikari:
+      connection-test-query: select 1
+
