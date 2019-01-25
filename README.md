@@ -3,3 +3,8 @@
 - [监控服务端](https://github.com/leowy/springboot/tree/master/springboot-admin-server) 
 - [监控客户端](https://github.com/leowy/springboot/tree/master/springboot-admin-client)
 - [Swagger2API](https://github.com/leowy/springboot/tree/master/springboot-swagger2)
+- [多源数据库配置](https://github.com/leowy/springboot/tree/master/springboot-multidatasource)
+- [sybase批量插入数据](https://github.com/leowy/springboot/tree/master/springboot-mybatis-batch)
+- [mybatis配置](https://github.com/leowy/springboot/tree/master/springboot-mybatis)
+- [定时任务](https://github.com/leowy/springboot/tree/master/springboot-scheduler)
+- [线程池配置](https://github.com/leowy/springboot/tree/master/springboot-threadpool)
