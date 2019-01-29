@@ -9,7 +9,7 @@ import com.leo.mapper.User2Mapper;
 
 /**  
  *
- *  @author	Zhang Wei
+ *  @author	Leowy Zhuang
  */
 @Component
 public class Runner implements CommandLineRunner {
