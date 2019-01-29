@@ -11,3 +11,4 @@
 - [线程池配置](https://github.com/leowy/springboot/tree/master/springboot-threadpool)
 - [ehcache2.X缓存](https://github.com/leowy/springboot/tree/master/springboot-cache-ehcache2)
 - [ehcache3.X缓存](https://github.com/leowy/springboot/tree/master/springboot-cache-ehcache3)
+- [spring-data-Jpa](https://github.com/leowy/springboot/tree/master/springboot-data-jpa)
