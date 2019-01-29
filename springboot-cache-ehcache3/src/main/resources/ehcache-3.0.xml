@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xmlns:jsr107='http://www.ehcache.org/v3/jsr107'
+  xmlns='http://www.ehcache.org/v3'
+  xsi:schemaLocation="
+        http://www.ehcache.org/v3 http://www.ehcache.org/schema/ehcache-core-3.1.xsd
+        http://www.ehcache.org/v3/jsr107 http://www.ehcache.org/schema/ehcache-107-ext-3.1.xsd">
+  <!-- 持久化路径 -->
+    <persistence directory="D:/ehcacheData2"/>
+  <!-- <service>
+    <jsr107:defaults>
+      <jsr107:cache name="city" template="heap-cache"/> 
+    </jsr107:defaults>
+  </service> -->
+
+<!-- 缓存模版,此处为了显示其用法,也可以不用模版直接在cache中配置与模版参数相同 -->
+  <cache-template name="heap-cache">
+  	<!-- <key-type>java.lang.String</key-type>
+    <value-type>java.lang.String</value-type> -->
+      <!-- 单位默认为秒当用秒作单位时,可以不填 -->
+    <!-- <expiry>
+      <ttl unit="hours">1</ttl>
+    </expiry> -->
+    <!-- <listeners>
+        <listener>
+          <class>com.leo.ehcache.EventLogger</class>
+          <event-firing-mode>ASYNCHRONOUS</event-firing-mode>
+          <event-ordering-mode>UNORDERED</event-ordering-mode>
+          <events-to-fire-on>CREATED</events-to-fire-on>
+          <events-to-fire-on>UPDATED</events-to-fire-on>
+          <events-to-fire-on>EXPIRED</events-to-fire-on>
+          <events-to-fire-on>REMOVED</events-to-fire-on>
+          <events-to-fire-on>EVICTED</events-to-fire-on>
+        </listener>
+    </listeners> -->
+    <resources>
+      <heap unit="entries">2000</heap> 
+      <offheap unit="MB">100</offheap> 
+    </resources>
+  </cache-template>
+
+<!-- 缓存对象,如果使用了模版会覆盖模版中的内容,使用uses-template=""来引用模版  -->
+  <cache alias="user" uses-template="heap-cache">
+    <expiry>
+      <!-- 此处会覆盖模版中的(TTL)配置 -->
+      <ttl unit="seconds">40</ttl>
+    </expiry>
+    <resources>
+      <disk unit="MB" persistent="true"> 500</disk>
+    </resources>
+  </cache> 
+
+</config>
