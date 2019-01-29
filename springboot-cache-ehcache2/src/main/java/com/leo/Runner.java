@@ -11,7 +11,7 @@ import com.leo.mapper.UserMapper;
 
 /**  
  *
- *  @author	Zhang Wei
+ *  @author	Leowy Zhuang
  */
 @Component
 public class Runner implements CommandLineRunner {
