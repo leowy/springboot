@@ -12,3 +12,5 @@
 - [ehcache2.X缓存](https://github.com/leowy/springboot/tree/master/springboot-cache-ehcache2)
 - [ehcache3.X缓存](https://github.com/leowy/springboot/tree/master/springboot-cache-ehcache3)
 - [spring-data-Jpa](https://github.com/leowy/springboot/tree/master/springboot-data-jpa)
+- [jdbcTemplate](https://github.com/leowy/springboot/tree/master/springboot-jdbctemplate)
+- [redis](https://github.com/leowy/springboot/tree/master/springboot-data-redis)
